@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% block css %}
+
+{% endblock css %}
+{% block homeactive %}active{% endblock homeactive %}
+{% block body %}
+
+<div class="container-fluid px-0">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/static/images/Slide1.jpg" class="d-block w-100" style="max-height: 500px;" alt="loading...">
+            </div>
+            <div class="carousel-item">
+                <img src="/static/images/python.jpg" class="d-block w-100" style="max-height: 500px;" alt="loading...">
+            </div>
+            <div class="carousel-item">
+                <img src="/static/images/SLide3.jpg" class="d-block w-100" style="max-height: 500px;" alt="loading...">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+</div>
+<div class="container my-4">
+    <h3 class="text-center mb-4">Courses that We Offers.!</h3>
+
+    <div class="row">
+            <div class="col-md-4 border border-1 rounded-3 border-info">
+                <div class=" my-4 ">
+                    <img src="/static/images/python.jpg" class="rounded" style="width: 350px; height: 250px;"
+                        alt="loding...">
+                    <hr>
+                    <h3 class="text-center">Python Course</h3>
+                    <p class="text-justify">Python is a high-level programming Language which
+                        inludes Obect Orientes Concepts as well as Scripting.</p>
+                    <button class="btn btn-primary">Enroll Now</button>
+                </div>
+            </div>
+        <div class="col-md-4 border border-1 rounded-3 border-info">
+            <div class=" mt-4">
+                <img src="/static/images/compfun.jpg" class="rounded" style="width: 350px; height: 250px;"
+                    alt="loding...">
+                <hr>
+                <h3 class="text-center">Fundamentals</h3>
+                <p>An Input Device is a hardware component or peripheral that helps the user to provide proper
+                    instructions... </p>
+                <button class="btn btn-primary">Enroll Now</button>
+            </div>
+        </div>
+        <div class="col-md-4 border border-1 rounded-3 border-info">
+            <div class=" mt-4">
+                <img src="/static/images/compnet.jpg" class="rounded" style="width: 350px; height: 250px;"
+                    alt="loding...">
+                <hr>
+                <h3 class="text-center">Computer Networks</h3>
+                <p>Computer Network is a digital method to connect different computers to exchange ideas...
+                </p>
+                <button class="btn btn-primary">Enroll Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}

@@ -7,7 +7,7 @@ def home(request):
     return render(request, 'index.html')
 
 def blog(request):
-    no_of_posts = 5
+    no_of_posts = 3
     page = request.GET.get('page')
     if page is None:
         page = 1
